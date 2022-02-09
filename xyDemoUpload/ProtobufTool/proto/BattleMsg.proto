@@ -1,0 +1,41 @@
+message MsgMove
+{
+	optional int32 x = 1;
+	optional int32 y = 2;
+	optional int32 z = 3;
+}
+
+message MsgAttack
+{
+	optional string desc = 1;
+}
+
+message CharacterInfo
+{
+	optional string id = 1;
+	optional int32 camp = 2;
+	optional int32 hp = 3;
+	
+	optional float x = 4;
+	optional float y = 5;
+	optional float z = 6;
+	optional float ex = 7;
+	optional float ey = 8;
+	optional float ez = 9;
+}
+
+message MsgEnterBattle
+{
+	repeated CharacterInfo characters = 1;
+	optional int32 mapId = 2;
+}
+
+message MsgBattleResult
+{
+	optional int32 winCamp = 1;
+}
+
+message MsgLeaveBattle
+{
+	optional string id = 1;
+}

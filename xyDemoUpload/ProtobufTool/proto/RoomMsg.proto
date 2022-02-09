@@ -1,0 +1,44 @@
+message RoomInfo
+{
+	optional int32 id = 1;
+	optional int32 count = 2;
+	optional int32 status = 3;
+}
+
+message MsgGetRoomList
+{
+	repeated RoomInfo rooms = 1;
+}
+
+message MsgCreateRoom
+{
+	optional int32 result = 1;
+}
+
+message MsgEnterRoom
+{
+	optional int32 id = 1;
+	optional int32 result = 2;
+}
+
+message PlayerInfo
+{
+	optional string id = 1;
+	optional int32 camp = 2;
+	optional bool isHouseOwner = 3;
+}
+
+message MsgGetRoomInfo
+{
+	repeated PlayerInfo players = 1;
+}
+
+message MsgLeaveRoom
+{
+	optional int32 result = 1;
+}
+
+message MsgStartBattle
+{
+	optional int32 result = 1;
+}

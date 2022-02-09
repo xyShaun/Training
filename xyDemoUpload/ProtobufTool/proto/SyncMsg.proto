@@ -1,0 +1,36 @@
+message MsgSyncCharacter
+{
+	optional float x = 1;
+	optional float y = 2;
+	optional float z = 3;
+	optional float ex = 4;
+	optional float ey = 5;
+	optional float ez = 6;
+	
+	optional string id = 7;
+}
+
+message MsgFire
+{
+	optional float x = 1;
+	optional float y = 2;
+	optional float z = 3;
+	optional float ex = 4;
+	optional float ey = 5;
+	optional float ez = 6;
+	
+	optional string id = 7;
+}
+
+message MsgHit
+{
+	optional string targetId = 1;
+	
+	optional float x = 2;
+	optional float y = 3;
+	optional float z = 4;
+	
+	optional string id = 5;
+	optional int32 hp = 6;
+	optional int32 damage = 7;
+}

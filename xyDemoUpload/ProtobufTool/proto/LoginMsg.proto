@@ -1,0 +1,5 @@
+message MsgLogin
+{
+	optional string id = 1;
+	optional bool isLoginSuccess = 2;
+}
